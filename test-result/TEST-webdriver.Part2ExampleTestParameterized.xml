@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<testsuite failures="0" time="1.9" errors="0" skipped="0" tests="8" name="webdriver.Part2ExampleTestParameterized">
+  <testcase classname="webdriver.Part2ExampleTestParameterized" name="simple[0]" time="0.463">
+      </testcase>
+  <testcase classname="webdriver.Part2ExampleTestParameterized" name="someTest[0]" time="0.001">
+      </testcase>
+  <testcase classname="webdriver.Part2ExampleTestParameterized" name="simple[1]" time="0.506">
+      </testcase>
+  <testcase classname="webdriver.Part2ExampleTestParameterized" name="someTest[1]" time="0">
+      </testcase>
+  <testcase classname="webdriver.Part2ExampleTestParameterized" name="simple[2]" time="0.507">
+      </testcase>
+  <testcase classname="webdriver.Part2ExampleTestParameterized" name="someTest[2]" time="0">
+      </testcase>
+  <testcase classname="webdriver.Part2ExampleTestParameterized" name="simple[3]" time="0.423">
+      </testcase>
+  <testcase classname="webdriver.Part2ExampleTestParameterized" name="someTest[3]" time="0">
+      </testcase>
+</testsuite>

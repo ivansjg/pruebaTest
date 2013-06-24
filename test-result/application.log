@@ -1,0 +1,23 @@
+09 May 2013 11:39:39,354 INFO  ~ Starting /root/play-1.2.x/pruebaTest
+09 May 2013 11:39:39,363 WARN  ~ Declaring modules in application.conf is deprecated. Use dependencies.yml instead (module.cobertura)
+09 May 2013 11:39:39,378 INFO  ~ Module cobertura is available (/root/play-1.2.x/modules/cobertura-2.4)
+09 May 2013 11:39:40,725 WARN  ~ Actually play.tmp is set to null. Set it to play.tmp=none
+09 May 2013 11:39:40,736 WARN  ~ You're running Play! in DEV mode
+09 May 2013 11:39:40,974 INFO  ~ Listening for HTTP on port 9512 (Waiting a first request to start) ...
+09 May 2013 11:39:48,746 INFO  ~ Connected to jdbc:h2:mem:play;MODE=MYSQL;LOCK_MODE=0
+09 May 2013 11:39:48,847 INFO  ~ Application 'pruebaTest' is now started !
+09 May 2013 11:39:59,255 INFO  ~ [*] En beforeClass 1 null
+09 May 2013 11:40:02,187 INFO  ~ [*] En beforeClass 2 org.openqa.selenium.htmlunit.HtmlUnitDriver@5bd18b
+09 May 2013 11:40:02,200 INFO  ~ [*] En beforeTestCaseMethod
+09 May 2013 11:40:04,043 INFO  ~ [*] En testHelloWorldSearch
+09 May 2013 11:40:04,444 INFO  ~ [*] En afterTestCaseMethod
+09 May 2013 11:40:04,591 INFO  ~ [*] En afterClass
+09 May 2013 11:40:04,852 INFO  ~ [*] En beforeClass 1 null
+09 May 2013 11:40:04,868 INFO  ~ [*] En beforeClass 2 org.openqa.selenium.htmlunit.HtmlUnitDriver@1a5c614
+09 May 2013 11:40:04,869 INFO  ~ [*] En beforeTestCaseMethod
+09 May 2013 11:40:05,101 INFO  ~ [*] En testHelloWorldSearch
+09 May 2013 11:40:05,370 INFO  ~ [*] En afterTestCaseMethod
+09 May 2013 11:40:05,469 INFO  ~ [*] En afterClass
+09 May 2013 12:03:59,400 INFO  ~ Cobertura plugin: generating test coverage report
+09 May 2013 12:04:01,596 INFO  ~ Data file does not contain instrumentation information for the file webdriver/pages/Part2ExamplePage.java.  Ensure this class was instrumented, and this data file contains the instrumentation information.
+09 May 2013 12:04:01,603 INFO  ~ Test coverage report has been generated: file:/root/play-1.2.x/pruebaTest/test-result/code-coverage/index.html

@@ -1,0 +1,45 @@
+CompilerOracle: exclude jregex/Pretokenizer.next
+Listening for transport dt_socket at address: 48675
+17:27:03,289 INFO  ~ Starting /root/play-1.2.x/pruebaTest
+17:27:03,298 WARN  ~ Declaring modules in application.conf is deprecated. Use dependencies.yml instead (module.cobertura)
+17:27:03,299 INFO  ~ Module cobertura is available (/root/play-1.2.x/modules/cobertura-2.4)
+17:27:05,086 WARN  ~ Actually play.tmp is set to null. Set it to play.tmp=none
+17:27:05,100 WARN  ~ You're running Play! in DEV mode
+~
+~ Go to http://localhost:9512/@tests to run the tests
+~
+17:27:05,299 INFO  ~ Listening for HTTP on port 9512 (Waiting a first request to start) ...
+### Excluding compile: jregex.Pretokenizer::next
+17:27:09,349 INFO  ~ Connected to jdbc:h2:mem:play;MODE=MYSQL;LOCK_MODE=0
+Cobertura: Saved information on 5 classes.
+17:27:09,445 INFO  ~ Application 'pruebaTest' is now started !
+17:27:11,885 INFO  ~ [*] En beforeClass 1 null
+17:27:13,982 INFO  ~ [*] En beforeClass 2 org.openqa.selenium.htmlunit.HtmlUnitDriver@25452e
+17:27:13,990 INFO  ~ [*] En beforeTestCaseMethod
+17:27:15,406 INFO  ~ [*] En testHelloWorldSearch
+17:27:15,786 INFO  ~ [*] En afterTestCaseMethod
+17:27:15,936 INFO  ~ [*] En afterClass
+17:27:19,163 INFO  ~ [*] En beforeClass 1 null
+17:27:19,177 INFO  ~ [*] En beforeClass 2 org.openqa.selenium.htmlunit.HtmlUnitDriver@ba2e7
+17:27:19,178 INFO  ~ [*] En beforeTestCaseMethod
+17:27:19,417 INFO  ~ [*] En testHelloWorldSearch
+17:27:19,689 INFO  ~ [*] En afterTestCaseMethod
+17:27:19,811 INFO  ~ [*] En afterClass
+first
+null
+element
+height: 160 weight: 45 bmi: 17.6 bmiCategory: Underweight
+height: 168 weight: 70 bmi: 24.8 bmiCategory: Normal
+height: 181 weight: 89 bmi: 27.2 bmiCategory: Overweight
+height: 178 weight: 100 bmi: 31.6 bmiCategory: Obesity
+@KILLED
+17:27:32,402 INFO  ~ Cobertura plugin: generating test coverage report
+Cobertura: Loaded information on 5 classes.
+Cobertura: Saved information on 5 classes.
+Cobertura 1.9.2 - GNU GPL License (NO WARRANTY) - See COPYRIGHT file
+Cobertura: Loaded information on 5 classes.
+Report time: 153ms
+Cobertura 1.9.2 - GNU GPL License (NO WARRANTY) - See COPYRIGHT file
+Cobertura: Loaded information on 5 classes.
+Report time: 84ms
+17:27:34,648 INFO  ~ Test coverage report has been generated: file:/root/play-1.2.x/pruebaTest/test-result/code-coverage/index.html

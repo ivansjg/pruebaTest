@@ -1,0 +1,28 @@
+<?xml version="1.0"?>
+<!DOCTYPE coverage SYSTEM "http://cobertura.sourceforge.net/xml/coverage-04.dtd">
+
+<coverage line-rate="1.0" branch-rate="1.0" lines-covered="3" lines-valid="3" branches-covered="0" branches-valid="0" complexity="1.0" version="1.9.2" timestamp="1368093841541">
+	<sources>
+		<source>/root/play-1.2.x/modules/testrunner/app</source>
+		<source>/root/play-1.2.x/modules/cobertura-2.4/app</source>
+		<source>/root/play-1.2.x/pruebaTest/app</source>
+		<source>/root/play-1.2.x/pruebaTest/test</source>
+		<source>/root/play-1.2.x/pruebaTest/conf</source>
+		<source>/root/play-1.2.x/modules/docviewer/app</source>
+	</sources>
+	<packages>
+		<package name="webdriver.pages" line-rate="1.0" branch-rate="1.0" complexity="1.0">
+			<classes>
+				<class name="webdriver.pages.Part2ExamplePage" filename="webdriver/pages/Part2ExamplePage.java" line-rate="1.0" branch-rate="1.0" complexity="1.0">
+					<methods>
+					</methods>
+					<lines>
+						<line number="20" hits="5" branch="false"/>
+						<line number="21" hits="5" branch="false"/>
+						<line number="22" hits="5" branch="false"/>
+					</lines>
+				</class>
+			</classes>
+		</package>
+	</packages>
+</coverage>
