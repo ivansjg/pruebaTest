@@ -14,3 +14,91 @@
 27 jun 2013 14:16:22,357 WARN  ~ Messages file missing for locale en
 27 jun 2013 14:16:22,388 WARN  ~ Messages file missing for locale fr
 27 jun 2013 14:16:22,465 INFO  ~ Application 'pruebaTest' is now started !
+27 jun 2013 15:29:24,111 ERROR ~ 
+
+@6emb1kcj6
+Internal Server Error (500) for request GET /@tests
+
+Oops: RuntimeException
+An unexpected error occured caused by exception RuntimeException: null
+
+play.exceptions.UnexpectedException: Unexpected Error
+	at play.Play.start(Play.java:556)
+	at play.Play.detectChanges(Play.java:642)
+	at play.Invoker$Invocation.init(Invoker.java:198)
+	at Invocation.HTTP Request(Play!)
+Caused by: java.lang.RuntimeException
+	at play.modules.cobertura.CoberturaPlugin.onApplicationStop(Unknown Source)
+	at play.plugins.PluginCollection.onApplicationStop(PluginCollection.java:537)
+	at play.Play.stop(Play.java:566)
+	at play.Play.start(Play.java:450)
+	... 3 more
+27 jun 2013 15:29:27,348 INFO  ~ Siena DB Type: sql:h2:mysql
+27 jun 2013 15:29:27,484 ERROR ~ 
+
+@6emb1kcj7
+Internal Server Error (500) for request GET /@tests
+
+Oops: ModelException
+An unexpected error occured caused by exception ModelException: There are multiple columns with the name id in the table users
+
+play.exceptions.UnexpectedException: Unexpected Error
+	at play.Play.start(Play.java:556)
+	at play.Play.detectChanges(Play.java:642)
+	at play.Invoker$Invocation.init(Invoker.java:198)
+	at Invocation.HTTP Request(Play!)
+Caused by: org.apache.ddlutils.model.ModelException: There are multiple columns with the name id in the table users
+	at org.apache.ddlutils.model.Database.initialize(Database.java:348)
+	at org.apache.ddlutils.platform.JdbcModelReader.getDatabase(JdbcModelReader.java:516)
+	at org.apache.ddlutils.platform.JdbcModelReader.getDatabase(JdbcModelReader.java:464)
+	at org.apache.ddlutils.platform.PlatformImplBase.readModelFromDatabase(PlatformImplBase.java:2761)
+	at play.modules.siena.SienaPlugin.onApplicationStart(SienaPlugin.java:204)
+	at play.plugins.PluginCollection.onApplicationStart(PluginCollection.java:525)
+	at play.Play.start(Play.java:526)
+	... 3 more
+27 jun 2013 15:29:30,170 INFO  ~ Siena DB Type: sql:h2:mysql
+27 jun 2013 15:29:30,246 ERROR ~ 
+
+@6emb1kcj8
+Internal Server Error (500) for request GET /@tests
+
+Oops: ModelException
+An unexpected error occured caused by exception ModelException: There are multiple columns with the name id in the table users
+
+play.exceptions.UnexpectedException: Unexpected Error
+	at play.Play.start(Play.java:556)
+	at play.Play.detectChanges(Play.java:642)
+	at play.Invoker$Invocation.init(Invoker.java:198)
+	at Invocation.HTTP Request(Play!)
+Caused by: org.apache.ddlutils.model.ModelException: There are multiple columns with the name id in the table users
+	at org.apache.ddlutils.model.Database.initialize(Database.java:348)
+	at org.apache.ddlutils.platform.JdbcModelReader.getDatabase(JdbcModelReader.java:516)
+	at org.apache.ddlutils.platform.JdbcModelReader.getDatabase(JdbcModelReader.java:464)
+	at org.apache.ddlutils.platform.PlatformImplBase.readModelFromDatabase(PlatformImplBase.java:2761)
+	at play.modules.siena.SienaPlugin.onApplicationStart(SienaPlugin.java:204)
+	at play.plugins.PluginCollection.onApplicationStart(PluginCollection.java:525)
+	at play.Play.start(Play.java:526)
+	... 3 more
+27 jun 2013 15:29:33,763 INFO  ~ Siena DB Type: sql:h2:mysql
+27 jun 2013 15:29:33,824 ERROR ~ 
+
+@6emb1kcj9
+Internal Server Error (500) for request GET /@tests
+
+Oops: ModelException
+An unexpected error occured caused by exception ModelException: There are multiple columns with the name id in the table users
+
+play.exceptions.UnexpectedException: Unexpected Error
+	at play.Play.start(Play.java:556)
+	at play.Play.detectChanges(Play.java:642)
+	at play.Invoker$Invocation.init(Invoker.java:198)
+	at Invocation.HTTP Request(Play!)
+Caused by: org.apache.ddlutils.model.ModelException: There are multiple columns with the name id in the table users
+	at org.apache.ddlutils.model.Database.initialize(Database.java:348)
+	at org.apache.ddlutils.platform.JdbcModelReader.getDatabase(JdbcModelReader.java:516)
+	at org.apache.ddlutils.platform.JdbcModelReader.getDatabase(JdbcModelReader.java:464)
+	at org.apache.ddlutils.platform.PlatformImplBase.readModelFromDatabase(PlatformImplBase.java:2761)
+	at play.modules.siena.SienaPlugin.onApplicationStart(SienaPlugin.java:204)
+	at play.plugins.PluginCollection.onApplicationStart(PluginCollection.java:525)
+	at play.Play.start(Play.java:526)
+	... 3 more
