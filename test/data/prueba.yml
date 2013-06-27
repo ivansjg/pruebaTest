@@ -1,0 +1,15 @@
+User(javi):
+  name: "Javier"
+  password: "a"
+
+User(ivan):
+  name: "Ivan"
+  password: "a"
+
+User(imanol):
+  name: "Imanol"
+  password: "a"
+
+User(olea):
+  name: "Olea"
+  password: "a"

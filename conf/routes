@@ -2,14 +2,54 @@
 # This file defines all application routes (Higher priority routes first)
 # ~~~~
 
-# Home page
-GET     /                                       Application.index
+# HOME PAGE
+GET     /                                           Application.index
+#GET     /{lang}                                     Application.redirectToIndexWithLang
+
+
+
+# USER
+GET     /user/?                                     UserController.index
+
+
+
+# USER ACCOUNT
+GET     /login/?                                    UserController.showLoginForm
+POST    /login                                      UserController.submitLoginForm
+GET     /logout                                     UserController.logout
+
+GET     /recover-account/?                          UserController.showRecoverAccountForm
+POST    /recover-account/?                          UserController.submitRecoverAccountForm
+
+GET     /recover-account/reset/{token}/?            UserController.showResetPasswordForm
+POST    /recover-account/reset                      UserController.submitResetPasswordForm
+
+
+# CITIZEN REGISTRATION
+GET     /signup/?                                   CitizenController.showSignUpForm
+POST    /signup                                     CitizenController.submitSignUpForm
+
+# POLITICIAN REGISTRATION
+GET     /signup/politician/{token}/?                PoliticianController.showSignUpForm
+POST    /signup/politician                          PoliticianController.submitSignUpForm
+
+# ADMIN
+GET     /admin/?                                    admin.AdminController.index
+
+GET     /admin/register-elected-politician/?        admin.AdminController.showSignUpPoliticianElectedForm
+POST    /admin/register-elected-politician          admin.AdminController.submitSignUpPoliticianElectedForm
+
+GET     /admin/register-non-elected-politician/?    admin.AdminController.showSignUpPoliticianNonElectedForm
+POST    /admin/register-non-elected-politician      admin.AdminController.submitSignUpPoliticianNonElectedForm
+
+
+
 
 # Ignore favicon requests
-GET     /favicon.ico                            404
+GET     /favicon.ico                                404
 
 # Map static resources from the /app/public folder to the /public path
 GET     /public/                                staticDir:public
 
 # Catch all
-*       /{controller}/{action}                  {controller}.{action}
+/{controller}/{action}                              404
