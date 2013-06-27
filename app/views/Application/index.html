@@ -1,4 +1,55 @@
 #{extends 'main.html' /}
-#{set title:'Home' /}
+#{set title:'Listado de Acciones' /}
 
-#{welcome /}
+<p>Listado de Acciones Implementadas</p>
+
+<p>
+    User Controller
+    <ul>
+        <li>
+            <a href="@{UserController.showLoginForm}"/>Login</a>
+        </li>
+        <li>
+            <a href="@{UserController.logout}"/>Logout</a>
+        </li>
+        <li>
+            <a href="@{UserController.showRecoverAccountForm}"/>Recover Account</a>            
+        </li>
+        <li>
+            <a href="@{UserController.showResetPasswordForm('asdfasdf')}"/>Reset Password</a>
+        </li>
+    </ul>
+</p>
+
+<p>
+    Citizen Controller
+    <ul>
+        <li>
+            <a href="@{CitizenController.showSignUpForm}"/>Sign Up</a>            
+        </li>
+    </ul>
+</p>
+
+<p>
+    Politician Controller
+    <ul>
+        <li>
+            <a href="@{PoliticianController.showSignUpForm('13241235')}"/>Completar Registro NON ELECTED</a>
+        </li>
+    </ul>
+</p>
+
+<p>
+    Administrators Zone
+    <ul>
+        <li>
+            <a href="@{admin.AdminController.index}"/>Menú</a>
+        </li>
+        <li>
+            <a href="@{admin.AdminController.showSignUpPoliticianElectedForm}"/>Registrar ELECTO</a>
+        </li>
+        <li>
+            <a href="@{admin.AdminController.showSignUpPoliticianNonElectedForm}"/>Registrar NO ELECTO</a>
+        </li>
+    </ul>
+</p>

@@ -1,3 +1,128 @@
-# You can specialize this file for each language.
-# For example, for French create a messages.fr file
-#
+#VALIDATION
+validation.required=Required field
+validation.email=Invalid email address
+
+# LOGIN section
+login.page_title=Access to GovFaces
+login.errors_title=Some errors were found while login
+login.email_placeholder=email
+login.email_label=Insert your email
+login.password_placeholder=password
+login.password_label=Insert your password
+login.submit=Login
+login.recover_account_text=Recover password
+
+# RECOVER ACCOUNT section
+recoverAccount.page_title=Recover your lost password
+recoverAccount.header=Insert your email address where to send the instructions to set a new password
+recoverAccount.errors_title=Some errors were found while recovering your account
+recoverAccount.email_placeholder=email
+recoverAccount.email_label=Insert your email
+recoverAccount.submit=Recover
+recoverAccount.text_success_submit=<h2>Congratulations!<h2><br/>Check your email inbox<br/><br/>An email with the recover instructions has been sent to you.
+
+recoverAccount.reset.page_title=Set your new password!
+recoverAccount.reset.errors_title=Some errors were found while setting the new password
+recoverAccount.reset.new_password_label=New password
+recoverAccount.reset.new_password_placeholder=new password
+recoverAccount.reset.repeat_password_label=Repeat password
+recoverAccount.reset.repeat_password_placeholder=repeat password
+recoverAccount.reset.submit=Set password
+
+#ADMIN Section
+admin.index.page_title=Administrator Menu
+admin.index.header_text=Select the action you want to perform
+admin.signup.nonelected.page_title=Register a NON ELECTED politician
+admin.signup.elected.page_title=Register an ELECTED politician
+
+#POLITICIAN sign up proccess form
+politician.signup.errors_title=Some errors occurred when validating the sign up form
+politician.signup.name_label=Name
+politician.signup.name_placeholder=name
+politician.signup.alias_label=Username
+politician.signup.alias_placeholder=username
+politician.signup.email_label=Email
+politician.signup.email_placeholder=email
+politician.signup.birth_date_label=Birth Date
+politician.signup.birth_date_placeholder=dd/mm/yyyy
+politician.signup.sex_label=Sex
+politician.signup.language_label=Language
+politician.signup.nationality_label=Nationality
+politician.signup.political_system_label=Political System
+politician.signup.institution_label=Institution
+politician.signup.position_label=Position
+politician.signup.state_label=State
+politician.signup.province_label=Province
+politician.signup.political_party_label=Political Party
+politician.signup.political_group_label=Political Group
+politician.signup.photo=Photo
+politician.signup.submit=Sign Up!
+#ELECTED POLITICIAN registration form
+politician.signup.elected.page_title=Elected Politician Sign Up
+#NONELECTED POLITICIAN registration form
+politician.signup.nonelected.page_title=Non-Elected Politician Sign Up
+
+#SEXS
+sex.male=Male
+sex.female=Female
+
+#LANGUAGES
+SelectLanguage=Select a language
+EN=English
+ES=Spanish
+FR=French
+
+#NATIONALITIES
+SelectNationality=Select a country
+UK=United Kingdom
+Spain=Spain 
+France=France
+
+#POLITICAL SYSTEMS
+SelectPoliticalSystem=Select a Political System
+EU=European Union
+
+#INSTITUTIONS EUROPEAN UNION
+SelectInstitution=Select an Institution
+EuropeanCommission=European Commission
+EuropeanParliament=European Parliament
+
+#POSITIONS EUROPEAN UNION
+SelectPosition=Select a position
+President=President
+VicePresident=Vice President
+Parliamentary=Parliamentary
+Commissioner=Commissioner
+MemberParliament=Member of the Parliament
+MemberCommission=Member of the Commission
+
+#POLITICAL PARTIES
+SelectPoliticalParty=Select a political party
+PP=Party of the Population
+PS=Socialist Party
+
+#POLITICAL GROUPS
+SelectPoliticalGroup=Select a political group
+GroupPP=Group of the Parties of the Population
+GroupPS=Group of the Socialist Parties
+
+#CITIZENS
+citizens.signup.gfform.page_title=Citizen Registration
+citizens.signup.gfform.errors=Some errors were found while registering 
+citizens.signup.gfform.name_label=Name
+citizens.signup.gfform.name_placeholder=name
+citizens.signup.gfform.alias_label=Username
+citizens.signup.gfform.alias_placeholder=username
+citizens.signup.gfform.email_label=Email
+citizens.signup.gfform.email_placeholder=email
+citizens.signup.gfform.password_label=Password
+citizens.signup.gfform.password_placeholder=password
+citizens.signup.gfform.repeat_password_label=Repeat password
+citizens.signup.gfform.repeat_password_placeholder=repeat password
+citizens.signup.gfform.birthDate_label=Birth Date
+citizens.signup.gfform.birthDate_placeholder=dd/mm/yyyy
+citizens.signup.gfform.sex_label=Sex
+citizens.signup.gfform.nationality_label=Nationality
+citizens.signup.gfform.language_label=Language
+citizens.signup.gfform.photo_label=Photo
+citizens.signup.gfform.submit=Sign Up

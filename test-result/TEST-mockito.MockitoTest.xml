@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8" ?>
 
-<testsuite failures="0" time="0.918" errors="1" skipped="0" tests="4" name="mockito.MockitoTest">
-  <testcase classname="mockito.MockitoTest" name="mockitoWorksTest2" time="0.765">
+<testsuite failures="0" time="0.301" errors="1" skipped="0" tests="4" name="mockito.MockitoTest">
+  <testcase classname="mockito.MockitoTest" name="mockitoWorksTest2" time="0.189">
                         <error type="" message="A java.lang.RuntimeException has been caught, null">
         <![CDATA[
           In /test/mockito/MockitoTest.java, line 42
@@ -57,23 +57,23 @@
 	at play.server.PlayHandler$NettyInvocation.execute(PlayHandler.java:251)
 	at play.Invoker$Invocation.run(Invoker.java:278)
 	at play.server.PlayHandler$NettyInvocation.run(PlayHandler.java:229)
-	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:441)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:439)
 	at java.util.concurrent.FutureTask$Sync.innerRun(FutureTask.java:303)
 	at java.util.concurrent.FutureTask.run(FutureTask.java:138)
 	at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.access$301(ScheduledThreadPoolExecutor.java:98)
 	at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:206)
 	at java.util.concurrent.ThreadPoolExecutor$Worker.runTask(ThreadPoolExecutor.java:886)
 	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:908)
-	at java.lang.Thread.run(Thread.java:662)
+	at java.lang.Thread.run(Thread.java:680)
 
           </system-err>  
         }
             </testcase>
-  <testcase classname="mockito.MockitoTest" name="mockitoWorksTest3" time="0.044">
+  <testcase classname="mockito.MockitoTest" name="mockitoWorksTest3" time="0.034">
       </testcase>
-  <testcase classname="mockito.MockitoTest" name="mockitoWorksTest4" time="0.043">
+  <testcase classname="mockito.MockitoTest" name="mockitoWorksTest4" time="0.042">
       </testcase>
-  <testcase classname="mockito.MockitoTest" name="mockitoWorksTest5" time="0.054">
+  <testcase classname="mockito.MockitoTest" name="mockitoWorksTest5" time="0.024">
       </testcase>
   <testcase classname="mockito.MockitoTest" name="mockitoWorksTest" time="0.012">
       </testcase>

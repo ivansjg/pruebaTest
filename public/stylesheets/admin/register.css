@@ -1,0 +1,14 @@
+.errorsZone{
+    padding: 15px 30px;
+    background-color: #f89696;
+    border: 1px solid dashed;    
+    color: red;
+}
+
+.error{    
+    color: red;
+}
+
+#dataInputs{
+
+}

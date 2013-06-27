@@ -1,0 +1,166 @@
+<html>
+    <head>
+        <title>&{'citizens.signup.gfform.page_title'}</title>
+        <link rel="stylesheet" type="text/css" href="@{'/public/stylesheets/main.css'}" />        
+    </head>
+
+    <body>
+        
+        <section id="title">
+           <h2>&{'citizens.signup.gfform.page_title'} </h2>
+        </section>
+
+        #{ifErrors}
+        <section id="errors" class="errorsZone">
+            <h1>&{'citizens.signup.gfform.errors'}</h1>
+        </section>
+        #{/ifErrors}
+
+        <section id="dataInputs">
+            #{form @CitizenController.submitSignUpForm()}                
+                <table>
+                    <tr>
+                        <td>
+                            <label for="input_name" id="label_input_name">&{'citizens.signup.gfform.name_label'}</label>
+                        </td>
+                        <td>
+                            <input type="text" id="input_name" name="name" value="${flash.name}" placeholder="&{'citizens.signup.gfform.name_placeholder'}" />                            
+                        <td>
+                        <td>
+                            <span class="error">#{error 'name' /}</span>
+                        <td>
+                    </tr>
+                    
+                    <tr>
+                        <td>
+                            <label for="input_alias" id="label_input_alias">&{'citizens.signup.gfform.alias_label'}</label>
+                        </td>
+                        <td>
+                            <input type="text" id="input_alias" name="alias" value="${flash.alias}" placeholder="&{'citizens.signup.gfform.alias_placeholder'}" />                            
+                        <td>
+                        <td>
+                            <span class="error">#{error 'alias' /}</span>
+                        <td>
+                    </tr>
+
+                    <tr>
+                        <td>
+                            <label for="input_email" id="label_input_email">&{'citizens.signup.gfform.email_label'}</label>
+                        </td>
+                        <td>
+                            <input type="text" id="input_email" name="email" value="${flash.email}" placeholder="&{'citizens.signup.gfform.email_placeholder'}" />
+                        <td>
+                        <td>
+                            <span class="error">#{error 'email' /}</span>
+                        <td>
+                    </tr>
+
+                    <tr>
+                        <td>
+                            <label for="input_password" id="label_input_password">&{'citizens.signup.gfform.password_label'}</label>
+                        </td>
+                        <td>
+                            <input type="password" id="input_password" name="password" value="" placeholder="&{'citizens.signup.gfform.password_placeholder'}" />
+                        <td>
+                        <td>
+                            <span class="error">#{error 'password' /}</span>
+                        <td>
+                    </tr>
+
+                     <tr>
+                        <td>
+                            <label for="input_repeat_password" id="label_input_repeat_password">&{'citizens.signup.gfform.repeat_password_label'}</label>
+                        </td>
+                        <td>
+                            <input type="password" id="input_repeat_password" name="repeat_password" value="" placeholder="&{'citizens.signup.gfform.repeat_password_placeholder'}" />
+                        <td>
+                        <td>
+                            <span class="error">#{error 'repeat_password' /}</span>
+                        <td>
+                    </tr>
+
+                    <tr>
+                        <td>
+                            <label for="input_birthDate" id="label_input_birthDate">&{'citizens.signup.gfform.birthDate_label'}</label>
+                        </td>
+                        <td>
+                            <input type="text" id="input_birthDate" name="birthDate" value="${flash.birthDate}" placeholder="&{'citizens.signup.gfform.birthDate_placeholder'}" />
+                        <td>
+                        <td>
+                            <span class="error">#{error 'birthDate' /}</span>
+                        <td>
+                    </tr>
+
+                    <tr>
+                        <td>
+                            <label for="input_sex">&{'citizens.signup.gfform.sex_label'}</label>
+                        </td>
+                        <td>
+                            <select id="input_sex" name="sex">
+                                <option value="0" selected="selected">&{'sex.male'}</option>
+                                <option value="1">&{'sex.female'}</option>
+                            </select>
+                        <td>
+                        <td>
+                            <span class="error">#{error 'sex' /}</span>
+                        <td>
+                    </tr>
+
+                    <tr>
+                        <td>
+                            <label for="input_language">&{'citizens.signup.gfform.language_label'}</label>
+                        </td>
+                        <td>    
+                            <select id="input_language" name="language">
+                                <option value="0">&{'SelectLanguage'}</option>
+                                #{list items:languages, as:'language' }
+                                    <option value="${language.id}">${messages.get(language.name)}</option>
+                                #{/list}
+                            </select>
+                        <td>
+                        <td>
+                            <span class="error">#{error 'language' /}</span>
+                        <td>
+                    </tr>
+
+                    <tr>
+                        <td>
+                            <label for="input_nationality">&{'citizens.signup.gfform.nationality_label'}</label>
+                        </td>
+                        <td>    
+                            <select id="input_nationality" name="nationality">
+                                <option value="0">&{'SelectNationality'}</option>
+                                #{list items:nationalities, as:'nationality' }
+                                    <option value="${nationality.id}">${messages.get(nationality.name)}</option>
+                                #{/list}
+                            </select>
+                        <td>
+                        <td>
+                            <span class="error">#{error 'nationality' /}</span>
+                        <td>
+                    </tr>
+
+                    <tr>
+                        <td>
+                            <label for="input_photo">&{'citizens.signup.gfform.photo_label'}</label>
+                        </td>
+                        <td>    
+                            <input type="file" id="input_photo" name="photo">
+                        <td>
+                        <td>
+                            <span class="error">#{error 'photo' /}</span>
+                        <td>
+                    </tr>
+
+                    <tr>
+                        <td colspan="3" align="right">
+                            <input type="submit" value="&{'citizens.signup.gfform.submit'}"/> 
+                        </td>                    
+                    </tr>
+                </table>
+            #{/form}
+        </section>
+
+    </body>
+
+</html>

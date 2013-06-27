@@ -11,7 +11,7 @@ public class GoogleSearchPage {
 
 	protected WebDriver driver;
 	
-	@FindBy(name="q")
+	@FindBy(name="qno")
 	private WebElement searchField;	
 
 	@FindBy(name="btnK")

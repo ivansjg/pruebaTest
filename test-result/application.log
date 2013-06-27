@@ -1,23 +1,104 @@
-09 May 2013 11:39:39,354 INFO  ~ Starting /root/play-1.2.x/pruebaTest
-09 May 2013 11:39:39,363 WARN  ~ Declaring modules in application.conf is deprecated. Use dependencies.yml instead (module.cobertura)
-09 May 2013 11:39:39,378 INFO  ~ Module cobertura is available (/root/play-1.2.x/modules/cobertura-2.4)
-09 May 2013 11:39:40,725 WARN  ~ Actually play.tmp is set to null. Set it to play.tmp=none
-09 May 2013 11:39:40,736 WARN  ~ You're running Play! in DEV mode
-09 May 2013 11:39:40,974 INFO  ~ Listening for HTTP on port 9512 (Waiting a first request to start) ...
-09 May 2013 11:39:48,746 INFO  ~ Connected to jdbc:h2:mem:play;MODE=MYSQL;LOCK_MODE=0
-09 May 2013 11:39:48,847 INFO  ~ Application 'pruebaTest' is now started !
-09 May 2013 11:39:59,255 INFO  ~ [*] En beforeClass 1 null
-09 May 2013 11:40:02,187 INFO  ~ [*] En beforeClass 2 org.openqa.selenium.htmlunit.HtmlUnitDriver@5bd18b
-09 May 2013 11:40:02,200 INFO  ~ [*] En beforeTestCaseMethod
-09 May 2013 11:40:04,043 INFO  ~ [*] En testHelloWorldSearch
-09 May 2013 11:40:04,444 INFO  ~ [*] En afterTestCaseMethod
-09 May 2013 11:40:04,591 INFO  ~ [*] En afterClass
-09 May 2013 11:40:04,852 INFO  ~ [*] En beforeClass 1 null
-09 May 2013 11:40:04,868 INFO  ~ [*] En beforeClass 2 org.openqa.selenium.htmlunit.HtmlUnitDriver@1a5c614
-09 May 2013 11:40:04,869 INFO  ~ [*] En beforeTestCaseMethod
-09 May 2013 11:40:05,101 INFO  ~ [*] En testHelloWorldSearch
-09 May 2013 11:40:05,370 INFO  ~ [*] En afterTestCaseMethod
-09 May 2013 11:40:05,469 INFO  ~ [*] En afterClass
-09 May 2013 12:03:59,400 INFO  ~ Cobertura plugin: generating test coverage report
-09 May 2013 12:04:01,596 INFO  ~ Data file does not contain instrumentation information for the file webdriver/pages/Part2ExamplePage.java.  Ensure this class was instrumented, and this data file contains the instrumentation information.
-09 May 2013 12:04:01,603 INFO  ~ Test coverage report has been generated: file:/root/play-1.2.x/pruebaTest/test-result/code-coverage/index.html
+27 jun 2013 14:16:11,335 INFO  ~ Starting /Volumes/Clientes/GovFaces/Tests/pruebaTest
+27 jun 2013 14:16:11,339 WARN  ~ Declaring modules in application.conf is deprecated. Use dependencies.yml instead (module.siena)
+27 jun 2013 14:16:11,340 INFO  ~ Module siena is available (/Volumes/Clientes/GovFaces/Play Pruebas/play-1.2.5/modules/siena-2.0.6)
+27 jun 2013 14:16:11,340 WARN  ~ Declaring modules in application.conf is deprecated. Use dependencies.yml instead (module.cobertura)
+27 jun 2013 14:16:11,341 INFO  ~ Module cobertura is available (/Volumes/Clientes/GovFaces/Play Pruebas/play-1.2.5/modules/cobertura-2.4)
+27 jun 2013 14:16:12,085 WARN  ~ Actually play.tmp is set to null. Set it to play.tmp=none
+27 jun 2013 14:16:12,091 WARN  ~ You're running Play! in DEV mode
+27 jun 2013 14:16:12,201 INFO  ~ Listening for HTTP on port 9512 (Waiting a first request to start) ...
+27 jun 2013 14:16:17,154 ERROR ~ Invalid route definition : /{controller}/{action} 404
+27 jun 2013 14:16:21,404 INFO  ~ Connected to jdbc:h2:mem:play;MODE=MYSQL;LOCK_MODE=0
+27 jun 2013 14:16:21,446 INFO  ~ Siena DB Type: sql:h2:mysql
+27 jun 2013 14:16:21,864 INFO  ~ Table users needs to be added
+27 jun 2013 14:16:22,025 INFO  ~ Executed 1 SQL command(s) with 0 error(s)
+27 jun 2013 14:16:22,357 WARN  ~ Messages file missing for locale en
+27 jun 2013 14:16:22,388 WARN  ~ Messages file missing for locale fr
+27 jun 2013 14:16:22,465 INFO  ~ Application 'pruebaTest' is now started !
+27 jun 2013 15:29:24,111 ERROR ~ 
+
+@6emb1kcj6
+Internal Server Error (500) for request GET /@tests
+
+Oops: RuntimeException
+An unexpected error occured caused by exception RuntimeException: null
+
+play.exceptions.UnexpectedException: Unexpected Error
+	at play.Play.start(Play.java:556)
+	at play.Play.detectChanges(Play.java:642)
+	at play.Invoker$Invocation.init(Invoker.java:198)
+	at Invocation.HTTP Request(Play!)
+Caused by: java.lang.RuntimeException
+	at play.modules.cobertura.CoberturaPlugin.onApplicationStop(Unknown Source)
+	at play.plugins.PluginCollection.onApplicationStop(PluginCollection.java:537)
+	at play.Play.stop(Play.java:566)
+	at play.Play.start(Play.java:450)
+	... 3 more
+27 jun 2013 15:29:27,348 INFO  ~ Siena DB Type: sql:h2:mysql
+27 jun 2013 15:29:27,484 ERROR ~ 
+
+@6emb1kcj7
+Internal Server Error (500) for request GET /@tests
+
+Oops: ModelException
+An unexpected error occured caused by exception ModelException: There are multiple columns with the name id in the table users
+
+play.exceptions.UnexpectedException: Unexpected Error
+	at play.Play.start(Play.java:556)
+	at play.Play.detectChanges(Play.java:642)
+	at play.Invoker$Invocation.init(Invoker.java:198)
+	at Invocation.HTTP Request(Play!)
+Caused by: org.apache.ddlutils.model.ModelException: There are multiple columns with the name id in the table users
+	at org.apache.ddlutils.model.Database.initialize(Database.java:348)
+	at org.apache.ddlutils.platform.JdbcModelReader.getDatabase(JdbcModelReader.java:516)
+	at org.apache.ddlutils.platform.JdbcModelReader.getDatabase(JdbcModelReader.java:464)
+	at org.apache.ddlutils.platform.PlatformImplBase.readModelFromDatabase(PlatformImplBase.java:2761)
+	at play.modules.siena.SienaPlugin.onApplicationStart(SienaPlugin.java:204)
+	at play.plugins.PluginCollection.onApplicationStart(PluginCollection.java:525)
+	at play.Play.start(Play.java:526)
+	... 3 more
+27 jun 2013 15:29:30,170 INFO  ~ Siena DB Type: sql:h2:mysql
+27 jun 2013 15:29:30,246 ERROR ~ 
+
+@6emb1kcj8
+Internal Server Error (500) for request GET /@tests
+
+Oops: ModelException
+An unexpected error occured caused by exception ModelException: There are multiple columns with the name id in the table users
+
+play.exceptions.UnexpectedException: Unexpected Error
+	at play.Play.start(Play.java:556)
+	at play.Play.detectChanges(Play.java:642)
+	at play.Invoker$Invocation.init(Invoker.java:198)
+	at Invocation.HTTP Request(Play!)
+Caused by: org.apache.ddlutils.model.ModelException: There are multiple columns with the name id in the table users
+	at org.apache.ddlutils.model.Database.initialize(Database.java:348)
+	at org.apache.ddlutils.platform.JdbcModelReader.getDatabase(JdbcModelReader.java:516)
+	at org.apache.ddlutils.platform.JdbcModelReader.getDatabase(JdbcModelReader.java:464)
+	at org.apache.ddlutils.platform.PlatformImplBase.readModelFromDatabase(PlatformImplBase.java:2761)
+	at play.modules.siena.SienaPlugin.onApplicationStart(SienaPlugin.java:204)
+	at play.plugins.PluginCollection.onApplicationStart(PluginCollection.java:525)
+	at play.Play.start(Play.java:526)
+	... 3 more
+27 jun 2013 15:29:33,763 INFO  ~ Siena DB Type: sql:h2:mysql
+27 jun 2013 15:29:33,824 ERROR ~ 
+
+@6emb1kcj9
+Internal Server Error (500) for request GET /@tests
+
+Oops: ModelException
+An unexpected error occured caused by exception ModelException: There are multiple columns with the name id in the table users
+
+play.exceptions.UnexpectedException: Unexpected Error
+	at play.Play.start(Play.java:556)
+	at play.Play.detectChanges(Play.java:642)
+	at play.Invoker$Invocation.init(Invoker.java:198)
+	at Invocation.HTTP Request(Play!)
+Caused by: org.apache.ddlutils.model.ModelException: There are multiple columns with the name id in the table users
+	at org.apache.ddlutils.model.Database.initialize(Database.java:348)
+	at org.apache.ddlutils.platform.JdbcModelReader.getDatabase(JdbcModelReader.java:516)
+	at org.apache.ddlutils.platform.JdbcModelReader.getDatabase(JdbcModelReader.java:464)
+	at org.apache.ddlutils.platform.PlatformImplBase.readModelFromDatabase(PlatformImplBase.java:2761)
+	at play.modules.siena.SienaPlugin.onApplicationStart(SienaPlugin.java:204)
+	at play.plugins.PluginCollection.onApplicationStart(PluginCollection.java:525)
+	at play.Play.start(Play.java:526)
+	... 3 more

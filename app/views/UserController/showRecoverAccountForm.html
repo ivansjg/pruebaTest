@@ -1,0 +1,48 @@
+<html>
+    
+    <head>
+        <title>&{'recoverAccount.page_title'}</title>
+    </head>
+
+    <body>
+        
+        <section id="title">
+           <h2>&{'recoverAccount.page_title'} </h2>
+        </section>
+
+        #{ifErrors}
+        <section id="errors" class="errorsZone">
+            <h1>&{'recoverAccount.errors_title'}</h1>
+        </section>
+        #{/ifErrors}
+
+        <section id="dataInputs">
+            <p>&{'recoverAccount.header'}</p>
+            #{form @UserController.submitRecoverAccountForm()}
+                <table>
+                    <tbody>
+                        <tr>
+                            <td>
+                                <label for="input_email" id="label_input_email">&{'recoverAccount.email_label'}</label>
+                            </td>
+                            <td>
+                                <input type="text" id="input_email" name="email" value="${flash.email}" placeholder="&{'recoverAccount.email_placeholder'}" />
+                            <td>
+                            <td>
+                                <span class="error">#{error 'email' /}</span>
+                            <td>
+                        </tr>
+
+                        <tr>
+                            <td colspan="3" align="right">
+                                <input type="submit" value="&{'recoverAccount.submit'}"/> 
+                            </td>                    
+                        </tr>
+                    </tbody>
+                </table>
+            #{/form}
+        </section>
+
+    </body>
+
+</html>

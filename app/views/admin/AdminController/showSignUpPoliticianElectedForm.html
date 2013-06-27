@@ -1,0 +1,260 @@
+<html>
+    <head>
+        <title>&{'politician.signup.elected.page_title'}</title>
+        <link rel="stylesheet" type="text/css" href="@{'/public/stylesheets/admin/main.css'}" />
+        <link rel="stylesheet" type="text/css" href="@{'/public/stylesheets/admin/register.css'}" />
+    </head>
+
+    <body>
+        
+        <section id="title">
+           <h2>&{'politician.signup.elected.page_title'} </h2>
+        </section>
+
+        #{ifErrors}
+        <section id="errors" class="errorsZone">
+            <h1>&{'politician.signup.errors_title'}</h1>
+        </section>
+        #{/ifErrors}
+
+        <section id="dataInputs">
+
+            #{form @admin.AdminController.submitSignUpPoliticianElectedForm()}                
+                <table>
+                    <tr>
+                        <td>
+                            <label for="input_name" id="label_input_name">&{'politician.signup.name_label'}</label>
+                        </td>
+                        <td>
+                            <input type="text" id="input_name" name="name" value="${flash.name}" placeholder="&{'politician.signup.name_placeholder'}" />                            
+                        <td>
+                        <td>
+                            <span class="error">#{error 'name' /}</span>
+                        <td>
+                    </tr>
+                    
+                    <tr>
+                        <td>
+                            <label for="input_alias" id="label_input_alias">&{'politician.signup.alias_label'}</label>
+                        </td>
+                        <td>
+                            <input type="text" id="input_alias" name="alias" value="${flash.alias}" placeholder="&{'politician.signup.alias_placeholder'}" />                            
+                        <td>
+                        <td>
+                            <span class="error">#{error 'alias' /}</span>
+                        <td>
+                    </tr>
+
+                    <tr>
+                        <td>
+                            <label for="input_email" id="label_input_email">&{'politician.signup.email_label'}</label>
+                        </td>
+                        <td>
+                            <input type="text" id="input_email" name="email" value="${flash.email}" placeholder="&{'politician.signup.email_placeholder'}" />
+                        <td>
+                        <td>
+                            <span class="error">#{error 'email' /}</span>
+                        <td>
+                    </tr>
+
+                    <tr>
+                        <td>
+                            <label for="input_birthDate" id="label_input_birthDate">&{'politician.signup.birth_date_label'}</label>
+                        </td>
+                        <td>
+                            <input type="text" id="input_birthDate" name="birthDate" value="${flash.birthDate}" placeholder="&{'politician.signup.birth_date_placeholder'}" />
+                        <td>
+                        <td>
+                            <span class="error">#{error 'birthDate' /}</span>
+                        <td>
+                    </tr>
+
+                    <tr>
+                        <td>
+                            <label for="input_sex">&{'politician.signup.sex_label'}</label>
+                        </td>
+                        <td>                            
+                            <select id="input_sex" name="sex">
+                                <option value="0" selected="selected">&{'sex.male'}</option>
+                                <option value="1">&{'sex.female'}</option>
+                            </select>
+                        <td>
+                        <td>
+                            <span class="error">#{error 'sex' /}</span>
+                        <td>
+                    </tr>
+
+                    <tr>
+                        <td>
+                            <label for="input_language">&{'politician.signup.language_label'}</label>
+                        </td>
+                        <td>    
+                            <select id="input_language" name="user.idLanguage">
+                                <option value="0">&{'SelectLanguage'}</option>
+                                #{list items:languages, as:'language' }
+                                    <option value="${language.id}">${messages.get(language.name)}</option>
+                                #{/list}
+                            </select>
+                        <td>
+                        <td>
+                            <span class="error">#{error 'language' /}</span>
+                        <td>
+                    </tr>
+
+                    <tr>
+                        <td>
+                            <label for="input_nationality">&{'politician.signup.nationality_label'}</label>
+                        </td>
+                        <td>    
+                            <select id="input_nationality" name="user.idNationality">
+                                <option value="0">&{'SelectNationality'}</option>
+                                #{list items:nationalities, as:'nationality' }
+                                    <option value="${nationality.id}">${messages.get(nationality.name)}</option>
+                                #{/list}
+                            </select>
+                        <td>
+                        <td>
+                            <span class="error">#{error 'nationality' /}</span>
+                        <td>
+                    </tr>
+
+                    <tr>
+                        <td>
+                            <label for="input_politicalSystem">&{'politician.signup.political_system_label'}</label>
+                        </td>
+                        <td>
+                            <select id="input_politicalSystem" name="user.idPoliticalSystem">
+                                <option value="0">&{'SelectPoliticalSystem'}</option>
+                                #{list items:politicalSystems, as:'politicalSystem' }
+                                    <option value="${politicalSystem.id}">${messages.get(politicalSystem.name)}</option>
+                                #{/list}
+                            </select>
+                        <td>
+                        <td>
+                            <span class="error">#{error 'politicalSystem' /}</span>
+                        <td>
+                    </tr>
+
+                    <tr>
+                        <td>
+                            <label for="input_institution">&{'politician.signup.institution_label'}</label>
+                        </td>
+                        <td>    
+                            <select id="input_institution" name="user.idInstitution">
+                                <option value="0">&{'SelectInstitution'}</option>
+                                #{list items:institutions, as:'institution' }
+                                    <option value="${institution.id}">${messages.get(institution.name)}</option>
+                                #{/list}
+                            </select>
+                        <td>
+                        <td>
+                            <span class="error">#{error 'institution' /}</span>
+                        <td>
+                    </tr>
+
+                    <tr>
+                        <td>
+                            <label for="input_position">&{'politician.signup.position_label'}</label>
+                        </td>
+                        <td>    
+                            <select id="input_position" name="user.idPosition">
+                                <option value="0">&{'SelectPosition'}</option>
+                                #{list items:positions, as:'position' }
+                                    <option value="${position.id}">${messages.get(position.name)}</option>
+                                #{/list}
+                            </select>
+                        <td>
+                        <td>
+                            <span class="error">#{error 'position' /}</span>
+                        <td>
+                    </tr>
+
+                    <tr>
+                        <td>
+                            <label for="input_state">&{'politician.signup.state_label'}</label>
+                        </td>
+                        <td>    
+                            <select id="input_state" name="user.idState">
+                                <option value="0">&{'SelectNationality'}</option>
+                                #{list items:nationalities, as:'nationality' }
+                                    <option value="${nationality.id}">${messages.get(nationality.name)}</option>
+                                #{/list}
+                            </select>
+                        <td>
+                        <td>
+                            <span class="error">#{error 'state' /}</span>
+                        <td>
+                    </tr>
+
+                    <tr>
+                        <td>
+                            <label for="input_province">&{'politician.signup.province_label'}</label>
+                        </td>
+                        <td>    
+                            <select id="input_province" name="user.idProvince">
+                                <option value="1">Malaga</option>
+                            </select>
+                        <td>
+                        <td>
+                            <span class="error">#{error 'province' /}</span>
+                        <td>
+                    </tr>
+
+                    <tr>
+                        <td>
+                            <label for="input_politicalParty">&{'politician.signup.political_party_label'}</label>
+                        </td>
+                        <td>    
+                            <select id="input_politicalParty" name="user.idPoliticalParty">
+                                <option value="0">&{'SelectPoliticalParty'}</option>
+                                #{list items:politicalParties, as:'politicalParty' }
+                                    <option value="${politicalParty.id}">${messages.get(politicalParty.name)}</option>
+                                #{/list}
+                            </select>
+                        <td>
+                        <td>
+                            <span class="error">#{error 'politicalParty' /}</span>
+                        <td>
+                    </tr>
+
+                    <tr>
+                        <td>
+                            <label for="input_politicalGroup">&{'politician.signup.political_group_label'}</label>
+                        </td>
+                        <td>    
+                            <select id="input_politicalGroup" name="user.idPoliticalGroup">
+                                <option value="0">&{'SelectPoliticalGroup'}</option>
+                                #{list items:politicalGroups, as:'politicalGroup' }
+                                    <option value="${politicalGroup.id}">${messages.get(politicalGroup.name)}</option>
+                                #{/list}
+                            </select>
+                        <td>
+                        <td>
+                            <span class="error">#{error 'politicalGroup' /}</span>
+                        <td>
+                    </tr>
+
+                    <tr>
+                        <td>
+                            <label for="input_photo">&{'politician.signup.photo'}</label>
+                        </td>
+                        <td>    
+                            <input type="file" id="input_photo" name="user.photo">
+                        <td>
+                        <td>
+                            <span class="error">#{error 'photo' /}</span>
+                        <td>
+                    </tr>
+
+                    <tr>
+                        <td colspan="3" align="right">
+                            <input type="submit" value="&{'politician.signup.submit'}"/> 
+                        </td>                    
+                    </tr>
+                </table>
+            #{/form}
+        </section>
+
+    </body>
+
+</html>

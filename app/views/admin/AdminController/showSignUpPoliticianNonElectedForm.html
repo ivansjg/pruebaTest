@@ -1,0 +1,71 @@
+<html>
+    <head>
+        <title>&{'politician.signup.nonelected.page_title'}</title>
+        <link rel="stylesheet" type="text/css" href="@{'/public/stylesheets/admin/main.css'}" />
+        <link rel="stylesheet" type="text/css" href="@{'/public/stylesheets/admin/register.css'}" />
+    </head>
+
+    <body>
+        
+        <section id="title">
+           <h2>&{'politician.signup.nonelected.page_title'} </h2>
+        </section>
+
+        #{ifErrors}
+        <section id="errors" class="errorsZone">
+            <h1>&{'politician.signup.errors_title'}</h1>
+        </section>
+        #{/ifErrors}
+
+        <section id="dataInputs">
+
+            #{form @admin.AdminController.submitSignUpPoliticianNonElectedForm()}                
+                <table>
+                    <tr>
+                        <td>
+                            <label for="input_name" id="label_input_name">&{'politician.signup.name_label'}</label>
+                        </td>
+                        <td>
+                            <input type="text" id="input_name" name="name" value="${flash.name}" placeholder="&{'politician.signup.name_placeholder'}" />                            
+                        <td>
+                        <td>
+                            <span class="error">#{error 'name' /}</span>
+                        <td>
+                    </tr>
+                    
+                    <tr>
+                        <td>
+                            <label for="input_alias" id="label_input_alias">&{'politician.signup.alias_label'}</label>
+                        </td>
+                        <td>
+                            <input type="text" id="input_alias" name="alias" value="${flash.alias}" placeholder="&{'politician.signup.alias_placeholder'}" />
+                        <td>
+                        <td>
+                            <span class="error">#{error 'alias' /}</span>
+                        <td>
+                    </tr>
+
+                    <tr>
+                        <td>
+                            <label for="input_email" id="label_input_email">&{'politician.signup.email_label'}</label>
+                        </td>
+                        <td>
+                            <input type="text" id="input_email" name="email" value="${flash.email}" placeholder="&{'politician.signup.email_placeholder'}" />
+                        <td>
+                        <td>
+                            <span class="error">#{error 'email' /}</span>
+                        <td>
+                    </tr>
+                    
+                    <tr>
+                        <td colspan="3" align="right">
+                            <input type="submit" value="&{'politician.signup.submit'}"/> 
+                        </td>                    
+                    </tr>
+                </table>
+            #{/form}
+        </section>
+
+    </body>
+
+</html>

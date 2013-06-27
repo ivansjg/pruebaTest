@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8" ?>
 
-<testsuite failures="0" time="0.7" errors="0" skipped="0" tests="1" name="webdriver.Part2ExampleTest">
-  <testcase classname="webdriver.Part2ExampleTest" name="simple" time="0.7">
+<testsuite failures="0" time="0.539" errors="0" skipped="0" tests="1" name="webdriver.Part2ExampleTest">
+  <testcase classname="webdriver.Part2ExampleTest" name="simple" time="0.539">
       </testcase>
 </testsuite>
